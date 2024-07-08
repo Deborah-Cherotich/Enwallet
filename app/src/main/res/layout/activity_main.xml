@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/MoneyIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/income" />
+
+    <TextView
+        android:id="@+id/tvMoneyIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="MONEYIN"
+        app:layout_constraintBottom_toTopOf="@+id/MoneyIn"
+        app:layout_constraintStart_toEndOf="@+id/MoneyIn"
+        app:layout_constraintTop_toTopOf="@+id/MoneyIn" />
+
+    <TextView
+        android:id="@+id/tvMoney1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="KES 42400"
+        app:layout_constraintBottom_toBottomOf="@+id/MoneyIn"
+        app:layout_constraintStart_toEndOf="@+id/MoneyIn"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyIn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="189dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MoneyIn"
+        app:layout_constraintStart_toEndOf="@+id/MoneyIn"
+        app:layout_constraintTop_toTopOf="@+id/MoneyIn"
+        app:srcCompat="@drawable/expense" />
+
+    <TextView
+        android:id="@+id/tvMoneyOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="MONEY OUT"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMoneyIn"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/tvMoneyIn" />
+
+    <TextView
+        android:id="@+id/tvMoney2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="KES23700"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMoney1"
+        app:layout_constraintEnd_toEndOf="@+id/tvMoneyOut"
+        app:layout_constraintStart_toStartOf="@+id/tvMoneyOut"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyOut" />
+
+    <ImageView
+        android:id="@+id/idBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/MoneyIn"
+        app:layout_constraintStart_toStartOf="@+id/MoneyIn"
+        app:layout_constraintTop_toBottomOf="@+id/MoneyIn"
+        app:srcCompat="@drawable/balance" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BALANCE"
+        app:layout_constraintBottom_toTopOf="@+id/idBalance"
+        app:layout_constraintEnd_toEndOf="@+id/tvMoneyIn"
+        app:layout_constraintStart_toStartOf="@+id/tvMoneyIn" />
+
+    <TextView
+        android:id="@+id/tvBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KES 18700"
+        app:layout_constraintBottom_toBottomOf="@+id/idBalance"
+        app:layout_constraintStart_toStartOf="@+id/tvBalance" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/idBalance"
+        app:srcCompat="@drawable/transactions" />
+
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRANSACTIONS"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBalance"
+        app:layout_constraintStart_toStartOf="@+id/tvMoneyOut"
+        app:layout_constraintTop_toTopOf="@+id/tvBalance" />
+
+    <TextView
+        android:id="@+id/tvTransact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBal"
+        app:layout_constraintEnd_toEndOf="@+id/tvOut"
+        app:layout_constraintStart_toStartOf="@+id/tvOut"
+        app:layout_constraintTop_toTopOf="@+id/tvBal" />
+
+    <ImageView
+        android:id="@+id/tvSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/idBalance"
+        app:layout_constraintStart_toStartOf="@+id/idBalance"
+        app:layout_constraintTop_toBottomOf="@+id/idBalance"
+        app:srcCompat="@drawable/income_trx" />
+
+    <TextView
+        android:id="@+id/tvSal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salary"
+        app:layout_constraintBottom_toTopOf="@+id/tvSalary"
+        app:layout_constraintStart_toStartOf="@+id/tvBal"
+        app:layout_constraintTop_toTopOf="@+id/tvSalary" />
+
+    <TextView
+        android:id="@+id/tvSalBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KES 40000"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSalary"
+        app:layout_constraintEnd_toEndOf="@+id/tvBal"
+        app:layout_constraintStart_toStartOf="@+id/tvBal"
+        app:layout_constraintTop_toBottomOf="@+id/tvSalary" />
+
+    <TextView
+        android:id="@+id/tvDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 July 2024"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSalBal"
+        app:layout_constraintEnd_toEndOf="@+id/tvTransact"
+        app:layout_constraintStart_toStartOf="@+id/tvTransact"
+        app:layout_constraintTop_toTopOf="@+id/tvSalBal" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSalary"
+        app:layout_constraintStart_toStartOf="@+id/tvSalary"
+        app:layout_constraintTop_toBottomOf="@+id/tvSalary"
+        app:srcCompat="@drawable/expense_trx" />
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/tvSal"
+        app:layout_constraintStart_toStartOf="@+id/tvSal" />
+
+    <TextView
+        android:id="@+id/TVRentKes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KES 16000"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="@+id/tvSal"
+        app:layout_constraintStart_toStartOf="@+id/tvSalBal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/tvDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 July 2024"
+        app:layout_constraintBottom_toBottomOf="@+id/TVRentKes"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate1"
+        app:layout_constraintStart_toStartOf="@+id/tvDate1"
+        app:layout_constraintTop_toTopOf="@+id/TVRentKes" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/income_trx" />
+
+    <TextView
+        android:id="@+id/tvDevidents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dividents"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/tvRent"
+        app:layout_constraintStart_toStartOf="@+id/tvRent" />
+
+    <TextView
+        android:id="@+id/tvDivBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KES 2400"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/tvDevidents"
+        app:layout_constraintStart_toStartOf="@+id/tvDevidents" />
+
+    <TextView
+        android:id="@+id/tvDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 July 2024"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDivBal"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate2"
+        app:layout_constraintStart_toStartOf="@+id/tvDate2"
+        app:layout_constraintTop_toBottomOf="@+id/tvDevidents" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/expense_trx" />
+
+    <TextView
+        android:id="@+id/tvElectricity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/tvDivBal"
+        app:layout_constraintStart_toStartOf="@+id/tvDivBal" />
+
+    <TextView
+        android:id="@+id/tvElectBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KES 800"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/tvElectricity" />
+
+    <TextView
+        android:id="@+id/tvDate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 July 2024"
+        app:layout_constraintBottom_toBottomOf="@+id/tvElectBal"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate3"
+        app:layout_constraintStart_toStartOf="@+id/tvDate3"
+        app:layout_constraintTop_toTopOf="@+id/tvElectBal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

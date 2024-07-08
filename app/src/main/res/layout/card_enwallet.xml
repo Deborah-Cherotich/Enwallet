@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/moneyIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/income" />
+
+        <TextView
+            android:id="@+id/tvMoneyIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="MONEY IN"
+            app:layout_constraintBottom_toBottomOf="@+id/moneyIn"
+            app:layout_constraintStart_toEndOf="@+id/moneyIn"
+            app:layout_constraintTop_toTopOf="@+id/moneyIn" />
+
+        <TextView
+            android:id="@+id/idMoney1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="KES 42400"
+            app:layout_constraintEnd_toEndOf="@+id/tvMoneyIn"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoneyIn" />
+
+        <ImageView
+            android:id="@+id/MoneyOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            app:layout_constraintBottom_toBottomOf="@+id/moneyIn"
+            app:layout_constraintStart_toEndOf="@+id/moneyIn"
+            app:layout_constraintTop_toTopOf="@+id/moneyIn"
+            app:srcCompat="@drawable/expense" />
+
+        <TextView
+            android:id="@+id/tvMoneyOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MONEY OUT"
+            app:layout_constraintBottom_toBottomOf="@+id/MoneyOut"
+            app:layout_constraintTop_toTopOf="@+id/MoneyOut"
+            tools:layout_editor_absoluteX="297dp" />
+
+        <TextView
+            android:id="@+id/tvMoneyOut1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="KES 23700"
+            app:layout_constraintEnd_toEndOf="@+id/tvMoneyOut"
+            app:layout_constraintStart_toStartOf="@+id/tvMoneyOut"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoneyOut" />
+
+        <ImageView
+            android:id="@+id/Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="84dp"
+            app:layout_constraintEnd_toEndOf="@+id/moneyIn"
+            app:layout_constraintStart_toStartOf="@+id/moneyIn"
+            app:layout_constraintTop_toBottomOf="@+id/moneyIn"
+            app:srcCompat="@drawable/balance" />
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="BALANCE"
+            app:layout_constraintBottom_toBottomOf="@+id/Balance"
+            app:layout_constraintEnd_toEndOf="@+id/idMoney1"
+            app:layout_constraintTop_toTopOf="@+id/Balance" />
+
+        <TextView
+            android:id="@+id/tvBalance1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tools:text="KES 18700"
+            app:layout_constraintEnd_toEndOf="@+id/tvBalance"
+            app:layout_constraintStart_toStartOf="@+id/tvBalance"
+            tools:layout_editor_absoluteY="183dp" />
+
+        <ImageView
+            android:id="@+id/Transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/Balance"
+            app:layout_constraintEnd_toEndOf="@+id/MoneyOut"
+            app:layout_constraintStart_toStartOf="@+id/MoneyOut"
+            app:layout_constraintTop_toTopOf="@+id/Balance"
+            app:srcCompat="@drawable/transactions" />
+
+        <TextView
+            android:id="@+id/tvTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+           tools:text="TRANSACTIONS"
+            app:layout_constraintEnd_toEndOf="@+id/tvMoneyOut1"
+            app:layout_constraintStart_toStartOf="@+id/tvMoneyOut1"
+            app:layout_constraintTop_toBottomOf="@+id/tvMoneyOut1" />
+
+        <TextView
+            android:id="@+id/tvTransaction1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="8"
+            app:layout_constraintEnd_toEndOf="@+id/tvMoneyOut1"
+            app:layout_constraintStart_toStartOf="@+id/tvMoneyOut1"
+            app:layout_constraintTop_toBottomOf="@+id/tvTransactions" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
