@@ -1,8 +1,8 @@
 package com.akirachix.enwallet
 
 data class Money(
-    var tvMoney:  String,
-
-
-
+    var icon: String,
+    var spend: String,
+    var money: String,
+    var date: String
 )

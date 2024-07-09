@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">En Wallet</string>
+    <string name="kes_40000">KES 40000</string>
+    <string name="salary">Salary</string>
+    <string name="money_in">MONEY IN</string>
+    <string name="kes_42400">KES 42400</string>
+    <string name="money_out">MONEY OUT</string>
+    <string name="kes23700">KES23700</string>
+    <string name="balance">BALANCE</string>
+    <string name="_8">8</string>
 </resources>
